@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        overflow: auto;
+    }
+
+    .bg-img {
+        /* background-image: url("https://www.hipi.info/wp-content/uploads/2020/03/2021-Porsche-911-Turbo-S-Coup%C3%A901.jpeg"); */
+        height: 700px;
+        max-width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        background-repeat: no-repeat;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .menu {
+        float: left;
+        width: 20%;
+        text-align: center;
+        /* only for demonstration, should be removed */
+
+    }
+
+    .myheader {
+        /* background-color: #e5e5e5; */
+        padding: 15px 0px;
+        text-align: center;
+        background-image: url("https://images.wallpaperscraft.com/image/porsche_911_gt2_rs_porsche_911_porsche_128639_2560x1080.jpg");
+
+    }
+
+    .menu a {
+        background-color: #e5e5e5;
+        padding: 8px;
+        margin-top: 7px;
+        display: block;
+        width: 100%;
+        color: black;
+    }
+
+    .main {
+        float: left;
+        width: 60%;
+        padding: 0 20px;
+
+        background-repeat: no-repeat;
+    }
+
+    .right {
+        background-color: #e5e5e5;
+        float: left;
+        width: 20%;
+        padding: 15px;
+        margin-top: 7px;
+        text-align: center;
+    }
+
+    @media only screen and (max-width:800px) {
+
+        /* For tablets: */
+        .main {
+            width: 80%;
+            padding: 0;
+        }
+
+        .right {
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width:500px) {
+
+        /* For mobile phones: */
+        .menu,
+        .main,
+        .right {
+            width: 100%;
+        }
+    }
+
+    /* footer {
+        background-color: #e5e5e5;
+        text-align: center;
+        padding: 10px;
+        margin-top: 7px;
+    } */
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="myheader">
+        <h3>Welcome!</h3>
+    </div>
+    <div style="overflow:auto">
+
+        <div class="menu">
+            <a href="#">My hobbies</a>
+            <a href="#">Games</a>
+            <a href="#">Github</a>
+            <a href="#">Resume</a>
+            <a href="carousel.html">Carousel photos</a>
+            <a href="dropDownMenu.html">DropDown Menu</a>
+            <a href="#">JS</a>
+        </div>
+
+
+
+        <div class="main">
+            <h2>Lorum Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet
+                dolore magna aliquam erat volutpat.</p>
+            <img src="https://wallpapercave.com/wp/wp3843018.jpg" width="100%">
+        </div>
+        <div class="right">
+            <h2>About</h2>
+            <p>Here you can learn more about me, my home country and my hobbies.</p>
+            <div class="dropdown">
+                <input type="checkbox" id="dropdown">
+
+                <label class="dropdown__face" for="dropdown">
+                    <div class="dropdown__text">Dropdown</div>
+
+                    <div class="dropdown__arrow"></div>
+                </label>
+
+                <ul class="dropdown__items">
+                    <li>🙂</li>
+                    <li>😺</li>
+                    <li>😽</li>
+                    <li>😎</li>
+                    <li>🤗</li>
+                </ul>
+            </div>
+
+            <svg>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                        result="goo" />
+                    <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+            </svg>
+        </div>
+    </div>
+
+
+    <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">footer</div>
+
+</body>
+
+</html>
