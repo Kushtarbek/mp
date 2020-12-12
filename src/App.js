@@ -1,20 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-import Header from './components/Header';
-import Profile from './components/Profile';
-import Feed from './components/Feed';
+import Header from './components/Header/Header';
+import Nav from './components/Nav/Nav';
+import Feed from './components/Feed/Feed';
+import Dialogs from './components/Dialogs/Dialogs';
+import FetchRandomUser from './fetch/FetchRandomUser';
 
 function App() {
   return (
-    <div className="app-wrapper">
-      <Header />
-      <Profile />
-
-
-      <Feed />
-
-
-    </div >
+    <div className="app-wrapper"> 
+     
+      <Header/>
+      <Nav/>
+      <div class={"app-wrapper-content"}>
+          {/* <Dialogs/> */}
+          <Feed />
+      </div>
+      <FetchRandomUser/>
+        </div >
   );
 }
 

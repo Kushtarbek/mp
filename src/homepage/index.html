@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Source+Serif+Pro:ital@1&display=swap');
     body {
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0;
+        font-family: 'Heebo', sans-serif;
+        font-family: 'Source Serif Pro', serif;
+        font-size: larger;
+        margin: 0 auto;
         overflow: auto;
     }
 
@@ -26,12 +29,10 @@
         float: left;
         width: 20%;
         text-align: center;
-        /* only for demonstration, should be removed */
 
     }
 
     .myheader {
-        /* background-color: #e5e5e5; */
         padding: 15px 0px;
         text-align: center;
         background-image: url("https://images.wallpaperscraft.com/image/porsche_911_gt2_rs_porsche_911_porsche_128639_2560x1080.jpg");
@@ -39,24 +40,26 @@
     }
 
     .menu a {
-        background-color: #e5e5e5;
+        background-color: #6489d81f;
         padding: 8px;
         margin-top: 7px;
         display: block;
         width: 100%;
         color: black;
+       
     }
+ 
 
     .main {
         float: left;
         width: 60%;
         padding: 0 20px;
-
+        text-align: center;
         background-repeat: no-repeat;
     }
 
     .right {
-        background-color: #e5e5e5;
+        background-color: #6489d81f;
         float: left;
         width: 20%;
         padding: 15px;
@@ -87,63 +90,69 @@
         }
     }
 
-    /* footer {
-        background-color: #e5e5e5;
-        text-align: center;
-        padding: 10px;
-        margin-top: 7px;
-    } */
+    footer{
+    background-color: #009688;
+    color: white;
+    clear: both;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+    box-sizing: inherit;
+}
+i1{
+    color: white;
+}
 </style>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <title>Document</title>
 </head>
 
 <body>
     <div class="myheader">
-        <h3>Welcome!</h3>
+        <h3>Welcome! &#128516 </h3>
     </div>
     <div style="overflow:auto">
 
         <div class="menu">
             <a href="#">My hobbies</a>
-            <a href="#">Games</a>
-            <a href="#">Github</a>
-            <a href="#">Resume</a>
+            <a href="https://www.ea.com/games/need-for-speed/need-for-speed-payback">&#128663 Games that I play</a>
+            <a href="https://github.com/Kushtarbek" target="_blank"><i class="fab fa-github"> GitHub</i> </a>
+            <a href="https://drive.google.com/file/d/1EaGIAXrqWxoD6cFowyRMojZq5vA-ERuC/view?usp=sharing" target="_blank"><i class="far fa-file"> Resume</i></a>
             <a href="carousel.html">Carousel photos</a>
             <a href="dropDownMenu.html">DropDown Menu</a>
-            <a href="#">JS</a>
+            <a href="https://github.com/Olshansk/interview#javascript" target="_blank">Interview prep</a>
         </div>
 
 
 
         <div class="main">
-            <h2>Lorum Ipsum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet
-                dolore magna aliquam erat volutpat.</p>
+            <h2>Hello friend! I welcome you on my webpage </h2>
+            <p> If you are here, then we probably met already. In case not, my name is Kushtar. I'm a Front End developer. 
+                Here you can learn about me, my interests as well as the web features that I learn and implement it here</p>
             <img src="https://wallpapercave.com/wp/wp3843018.jpg" width="100%">
         </div>
         <div class="right">
-            <h2>About</h2>
-            <p>Here you can learn more about me, my home country and my hobbies.</p>
+            <h2>About me</h2>
+            <p>Learn more about me, my home country and my hobbies.
+               
+            </p>
             <div class="dropdown">
-                <input type="checkbox" id="dropdown">
 
-                <label class="dropdown__face" for="dropdown">
-                    <div class="dropdown__text">Dropdown</div>
 
                     <div class="dropdown__arrow"></div>
-                </label>
 
                 <ul class="dropdown__items">
-                    <li>🙂</li>
-                    <li>😺</li>
-                    <li>😽</li>
-                    <li>😎</li>
-                    <li>🤗</li>
+                    <a href="mediaprofile.html">🙂</a>
+                    <a href="#">😺</a>
+                    <a href="#">😽</a>
+                    <a href="#">😎</a>
+                    <a href="#">🤗</a>
                 </ul>
             </div>
 
@@ -159,8 +168,18 @@
     </div>
 
 
-    <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">footer</div>
+   
+    <footer>
+        <p>Find me on social media</p>
+        <p><i1 class="fa fa-facebook-square" aria-hidden="true"></i1>
+            <i1 class="fa fa-instagram" aria-hidden="true"></i1>
+            <i1 class="fa fa-pinterest-square" aria-hidden="true"></i1>
+            <i1 class="fa fa-twitter-square" aria-hidden="true"></i1>
+            <i1 class="fa fa-linkedin-square" aria-hidden="true"></i1>
+        </p>
+    </footer>
 
 </body>
 
 </html>
+
