@@ -5,17 +5,18 @@ import s from './MyPosts.module.css'
 const MyPosts = (props) => {
   return (
     <div>
-      MyPosts
+      
       <div>
         <button> add post</button>
       </div>
+      
       <div>
         <p>
           {'this is from'}
           {props.message}
         </p>
         <Post message="Greetings 1" count="142" />
-        <Post message="Hola " count="12" />
+      
         <Post message="Salam aleikum " count="122" />
       </div>
     </div>
